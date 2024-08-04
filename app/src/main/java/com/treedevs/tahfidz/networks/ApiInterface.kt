@@ -32,7 +32,7 @@ interface ApiInterface {
         @Field("remark") remark : String,
     ) : Call<responseApi>
 //masukan key api disisni
-    @Headers("Authorization: Bearer ")
+    @Headers()
     @Multipart
     @POST("transcriptions")
     fun transkripAudio(
