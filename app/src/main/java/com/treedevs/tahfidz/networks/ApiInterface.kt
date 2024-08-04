@@ -31,8 +31,8 @@ interface ApiInterface {
         @Field("audio") audio : String?,
         @Field("remark") remark : String,
     ) : Call<responseApi>
-
-    @Headers("Authorization: Bearer sk-proj-J3tlzCnqqPmlI3LCNaYtT3BlbkFJNvEBsBmrHHDrnJV54PZK")
+//masukan key api disisni
+    @Headers("Authorization: Bearer ")
     @Multipart
     @POST("transcriptions")
     fun transkripAudio(
